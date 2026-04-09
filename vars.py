@@ -13,3 +13,8 @@ BOT_TOKEN = environ.get("BOT_TOKEN", "8684246543:AAHSspI4eNVh6IikZ9uCbNt6j-J-nWc
 DATABASE_URL = environ.get("DATABASE_URL", "mongodb+srv://adarshppandey937:uIoPcln9vXQBF0vP@cluster0.o9mn6hb.mongodb.net/?")
 # Replace "your_bot_db" with your desired database name.
 # For local testing, you might use "mongodb://localhost:27017/your_bot_db"
+# Web Server Configuration
+WEB_SERVER = os.environ.get("WEB_SERVER", "False").lower() == "true"
+WEBHOOK = True  # Don't change this
+PORT = int(os.environ.get("PORT", 8000))
+

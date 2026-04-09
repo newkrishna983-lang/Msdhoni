@@ -16,5 +16,5 @@ DATABASE_URL = environ.get("DATABASE_URL", "mongodb+srv://adarshppandey937:uIoPc
 # Web Server Configuration
 WEB_SERVER = os.environ.get("WEB_SERVER", "False").lower() == "true"
 WEBHOOK = True  # Don't change this
-PORT = int(os.environ.get("PORT", 8000))
+PORT = int(os.environ.get("PORT", 8080))
 
